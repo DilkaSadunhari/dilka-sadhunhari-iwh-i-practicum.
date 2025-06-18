@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    .container.mt-5
+      h1.mb-4 Add a New Movie
+
+      form(action="/update-cobj", method="POST")
+        .mb-3
+          label(for="name") Movie Title
+          input#name.form-control(type="text", name="name", required)
+
+        .mb-3
+          label(for="director") Director Name
+          input#director.form-control(type="text", name="director", required)
+
+        .mb-3
+          label(for="movie_genre") Genre
+          input#movie_genre.form-control(type="text", name="movie_genre", required)
+        .mb-3
+          label(for="movie_release_year") Release Year
+          input#movie_release_year.form-control(type="number", name="movie_release_year", min="1900", max="2100", required)
+
+        button.btn.btn-primary(type="submit") Submit
+
+      hr
+      a(href="/") Return to the homepage

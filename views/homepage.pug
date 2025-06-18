@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    .container.mt-5
+      h1.mb-4 Movies - Custom Object Table
+
+      a(href="/update-cobj", class="btn btn-success mb-3") Add to this table
+
+      if data.length
+        table.table.table-bordered.table-striped
+          thead
+            tr
+              th Name
+              th Director
+              th Genre
+              th Release Year
+          tbody
+            each record in data
+              tr
+                td= record.properties.name
+                td= record.properties.director
+                td= record.properties.movie_genre
+                td= record.properties.movie_release_year
+      else
+        p No records found.
