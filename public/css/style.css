@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* ---------- Base Styles ---------- */
 body {
   background-color: #f7f9fc;
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,7 +7,6 @@ body {
   color: #333;
 }
 
-/* ---------- Container ---------- */
 .container {
   max-width: 800px;
   background: white;
@@ -18,7 +16,6 @@ body {
   margin: 0 auto;
 }
 
-/* ---------- Headings ---------- */
 h1 {
   text-align: center;
   font-size: 2rem;
@@ -26,7 +23,6 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
-/* ---------- Links ---------- */
 a {
   display: inline-block;
   color: #007bff;
@@ -38,7 +34,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Form Styling ---------- */
 form label {
   font-weight: 500;
   color: #555;
